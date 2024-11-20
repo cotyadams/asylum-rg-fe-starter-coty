@@ -24,7 +24,7 @@ function RenderLandingPage(props) {
       setData(result.data);
     })
     .catch(error => {
-      console.err(error);
+      console.error(error);
     });
 
   const handleDownload = data => {
