@@ -1,6 +1,7 @@
 import Auth0ProviderWithHistory from '../src/auth/auth0-provider-with-history';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ProtectedRoute from './auth/ProtectedRoute';
 import {
   BrowserRouter as Router,
   Route,
@@ -57,7 +58,7 @@ export function App() {
       <Switch>
         <Route path="/" exact component={LandingPage} />
         <Route path="/graphs" component={GraphsContainer} />
-        <Route path="/profile" component={Profile} />
+        <ProtectedRoute path="/profile" component={Profile} />
         <Route component={NotFoundPage} />
       </Switch>
       <Footer

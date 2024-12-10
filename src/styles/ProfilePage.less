@@ -3,28 +3,30 @@
 @white: #ffffff;
 
 .profile-container {
-    display: flex;
+    display: flexbox;
     flex-direction: column;
     align-self: center;
-    align-items:end;
     margin-top: 50px;
+    margin-right: 120px;
 }
 
-.profile-pic {
-    margin-bottom: 5rem;
-    width: 10%;
-    align-self: center;
+.profile-pic img{
+    border-radius: 50%;
+    margin-left: 65px
 }
 
 .form-node-container {
     display: flex;
-    height: 10rem;
+    height: 4rem;
+    align-items: flex-end;
 }
 
-.form-node-container input {
-    display: flex;
-    height: 3rem;
-    width: 50rem;
-    font-size: 3rem;
-    align-self: left;
+.name {
+    flex: 0 0 130px;
+    text-align: right;
+    padding-right: 10px;
+}
+.value {
+    flex: 1;
+    text-align: left;
 }
